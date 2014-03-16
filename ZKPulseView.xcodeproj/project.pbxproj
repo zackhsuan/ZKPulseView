@@ -23,6 +23,7 @@
 		48A35ABB18D5C9C5007036F2 /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A35ABA18D5C9C5007036F2 /* ExampleViewController.m */; };
 		48A35ABE18D5C9DD007036F2 /* UIView+ZKPulseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A35ABD18D5C9DD007036F2 /* UIView+ZKPulseView.m */; };
 		48A35AC018D5CB4D007036F2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A35ABF18D5CB4D007036F2 /* QuartzCore.framework */; };
+		48A35AC318D5D1B1007036F2 /* ZKPulseView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 48A35AC218D5D1B1007036F2 /* ZKPulseView.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		48A35ABC18D5C9DD007036F2 /* UIView+ZKPulseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+ZKPulseView.h"; path = "Class/UIView+ZKPulseView.h"; sourceTree = "<group>"; };
 		48A35ABD18D5C9DD007036F2 /* UIView+ZKPulseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+ZKPulseView.m"; path = "Class/UIView+ZKPulseView.m"; sourceTree = "<group>"; };
 		48A35ABF18D5CB4D007036F2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		48A35AC218D5D1B1007036F2 /* ZKPulseView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ZKPulseView.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		48A35A7A18D5C7FD007036F2 = {
 			isa = PBXGroup;
 			children = (
+				48A35AC218D5D1B1007036F2 /* ZKPulseView.podspec */,
 				48A35A8C18D5C7FE007036F2 /* ZKPulseView */,
 				48A35AA518D5C7FE007036F2 /* ZKPulseViewTests */,
 				48A35A8518D5C7FE007036F2 /* Frameworks */,
@@ -252,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48A35AC318D5D1B1007036F2 /* ZKPulseView.podspec in Resources */,
 				48A35A9118D5C7FE007036F2 /* InfoPlist.strings in Resources */,
 				48A35A9918D5C7FE007036F2 /* Images.xcassets in Resources */,
 				48A35AB618D5C988007036F2 /* MainSB.storyboard in Resources */,
