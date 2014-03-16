@@ -19,6 +19,10 @@
 		48A35AA218D5C7FE007036F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A35A8A18D5C7FE007036F2 /* UIKit.framework */; };
 		48A35AAA18D5C7FE007036F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48A35AA818D5C7FE007036F2 /* InfoPlist.strings */; };
 		48A35AAC18D5C7FE007036F2 /* ZKPulseViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A35AAB18D5C7FE007036F2 /* ZKPulseViewTests.m */; };
+		48A35AB618D5C988007036F2 /* MainSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A35AB518D5C988007036F2 /* MainSB.storyboard */; };
+		48A35ABB18D5C9C5007036F2 /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A35ABA18D5C9C5007036F2 /* ExampleViewController.m */; };
+		48A35ABE18D5C9DD007036F2 /* UIView+ZKPulseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A35ABD18D5C9DD007036F2 /* UIView+ZKPulseView.m */; };
+		48A35AC018D5CB4D007036F2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A35ABF18D5CB4D007036F2 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,12 @@
 		48A35AA718D5C7FE007036F2 /* ZKPulseViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZKPulseViewTests-Info.plist"; sourceTree = "<group>"; };
 		48A35AA918D5C7FE007036F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		48A35AAB18D5C7FE007036F2 /* ZKPulseViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKPulseViewTests.m; sourceTree = "<group>"; };
+		48A35AB518D5C988007036F2 /* MainSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainSB.storyboard; sourceTree = "<group>"; };
+		48A35AB918D5C9C5007036F2 /* ExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleViewController.h; path = Example/ExampleViewController.h; sourceTree = "<group>"; };
+		48A35ABA18D5C9C5007036F2 /* ExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleViewController.m; path = Example/ExampleViewController.m; sourceTree = "<group>"; };
+		48A35ABC18D5C9DD007036F2 /* UIView+ZKPulseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+ZKPulseView.h"; path = "Class/UIView+ZKPulseView.h"; sourceTree = "<group>"; };
+		48A35ABD18D5C9DD007036F2 /* UIView+ZKPulseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+ZKPulseView.m"; path = "Class/UIView+ZKPulseView.m"; sourceTree = "<group>"; };
+		48A35ABF18D5CB4D007036F2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48A35AC018D5CB4D007036F2 /* QuartzCore.framework in Frameworks */,
 				48A35A8918D5C7FE007036F2 /* CoreGraphics.framework in Frameworks */,
 				48A35A8B18D5C7FE007036F2 /* UIKit.framework in Frameworks */,
 				48A35A8718D5C7FE007036F2 /* Foundation.framework in Frameworks */,
@@ -96,6 +107,7 @@
 		48A35A8518D5C7FE007036F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				48A35ABF18D5CB4D007036F2 /* QuartzCore.framework */,
 				48A35A8618D5C7FE007036F2 /* Foundation.framework */,
 				48A35A8818D5C7FE007036F2 /* CoreGraphics.framework */,
 				48A35A8A18D5C7FE007036F2 /* UIKit.framework */,
@@ -107,10 +119,13 @@
 		48A35A8C18D5C7FE007036F2 /* ZKPulseView */ = {
 			isa = PBXGroup;
 			children = (
+				48A35AB818D5C996007036F2 /* Class */,
+				48A35AB718D5C98E007036F2 /* Example */,
 				48A35A9518D5C7FE007036F2 /* AppDelegate.h */,
 				48A35A9618D5C7FE007036F2 /* AppDelegate.m */,
 				48A35A9818D5C7FE007036F2 /* Images.xcassets */,
 				48A35A8D18D5C7FE007036F2 /* Supporting Files */,
+				48A35AB518D5C988007036F2 /* MainSB.storyboard */,
 			);
 			path = ZKPulseView;
 			sourceTree = "<group>";
@@ -142,6 +157,24 @@
 				48A35AA818D5C7FE007036F2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		48A35AB718D5C98E007036F2 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				48A35AB918D5C9C5007036F2 /* ExampleViewController.h */,
+				48A35ABA18D5C9C5007036F2 /* ExampleViewController.m */,
+			);
+			name = Example;
+			sourceTree = "<group>";
+		};
+		48A35AB818D5C996007036F2 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				48A35ABC18D5C9DD007036F2 /* UIView+ZKPulseView.h */,
+				48A35ABD18D5C9DD007036F2 /* UIView+ZKPulseView.m */,
+			);
+			name = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +254,7 @@
 			files = (
 				48A35A9118D5C7FE007036F2 /* InfoPlist.strings in Resources */,
 				48A35A9918D5C7FE007036F2 /* Images.xcassets in Resources */,
+				48A35AB618D5C988007036F2 /* MainSB.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48A35ABE18D5C9DD007036F2 /* UIView+ZKPulseView.m in Sources */,
+				48A35ABB18D5C9C5007036F2 /* ExampleViewController.m in Sources */,
 				48A35A9718D5C7FE007036F2 /* AppDelegate.m in Sources */,
 				48A35A9318D5C7FE007036F2 /* main.m in Sources */,
 			);
@@ -437,6 +473,7 @@
 				48A35AB118D5C7FE007036F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48A35AB218D5C7FE007036F2 /* Build configuration list for PBXNativeTarget "ZKPulseViewTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +482,7 @@
 				48A35AB418D5C7FE007036F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
