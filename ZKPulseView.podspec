@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ZKPulseView"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Simple iOS UIView Category to create a Pulse (Breathing light) Effect on your needs"
 
   s.description  = <<-DESC
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/Oggerschummer/ZKPulseView"
   s.platform     = :ios
-  s.source       = { :git => "https://github.com/Oggerschummer/ZKPulseView/Class", :tag => "0.0.2" }
+  s.source       = { :git => "https://github.com/Oggerschummer/ZKPulseView/Class", :tag => "0.0.3" }
   s.source_files  = "SuperLogger"
   s.frameworks  = "Foundation", "UIKit", "MessageUI"
   s.requires_arc = yes
