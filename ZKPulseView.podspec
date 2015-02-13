@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/Oggerschummer/ZKPulseView"
   s.platform     = :ios
   s.source       = { :git => "https://github.com/Oggerschummer/ZKPulseView.git", :tag => "0.0.3" }
-  s.source_files  = 'Class/*.{h,m}'
+  s.source_files  = 'ZKPulseView/Class/*.{h,m}'
   s.frameworks  = "Foundation", "UIKit", "MessageUI"
   s.requires_arc = true
 
