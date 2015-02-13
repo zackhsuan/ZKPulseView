@@ -8,7 +8,7 @@ Simple iOS UIView Category to create a Pulse (Breathing light) Effect on your ne
 ## Install
 Recommended to use CocoaPos:
 ``` bash
-pod 'ZKPulseView', '~> 0.0.1'
+pod 'ZKPulseView', '~> 0.0.2'
 ```
 
 or you can just drag the ZKPulseView.h and ZKPulseView.m into your project and import them before you use it.

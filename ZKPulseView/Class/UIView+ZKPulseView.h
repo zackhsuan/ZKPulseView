@@ -17,6 +17,12 @@
  *
  */
 -(void) stopPulseEffect;
+/**
+ *  Check if pulse animation is active
+ *
+ *  @return YES / NO
+ */
+-(BOOL)isPulsating;
 
 /*
  * Start to pulse by using default color, which is the background color's reversed color
