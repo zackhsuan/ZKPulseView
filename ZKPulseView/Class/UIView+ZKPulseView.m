@@ -15,6 +15,10 @@
     self.layer.shadowOpacity = 0.0;
 }
 
+-(BOOL)isPulsating{
+    return ([self.layer animationForKey:@"ZKPulse"] !=Nil);
+}
+
 -(void)startPulse{
     //Start to pulse use the default reversed color
     [self startPulseWithColor:[self reversedColor]];

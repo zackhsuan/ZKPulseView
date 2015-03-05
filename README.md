@@ -8,7 +8,7 @@ Simple iOS UIView Category to create a Pulse (Breathing light) Effect on your ne
 ## Install
 Recommended to use CocoaPos:
 ``` bash
-pod 'ZKPulseView', '~> 0.0.1'
+pod 'ZKPulseView', '~> 0.0.3'
 ```
 
 or you can just drag the ZKPulseView.h and ZKPulseView.m into your project and import them before you use it.
@@ -29,6 +29,9 @@ for any view you want to do pulse, you can use the following methods
 //The underneeth method to create the pulse effect, you can use that for your own purposes
 
 -(void) startPulseWithColor:(UIColor *)color offset:(CGSize) offset frequency:(CGFloat) freq;
+
+//to check if the animation is active:
+-(BOOL) isPulsating
 
 //to stop the pulse effect, just by calling:
 
