@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.version      = "0.0.4"
   s.summary      = "Simple iOS UIView Category to create a Pulse (Breathing light) Effect on your needs"
   
-  s.author       = { "Zack Chung" => "" }
+  s.author       = { "Zack Chung" => "zackhsuan@gmail.com" }
   
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
