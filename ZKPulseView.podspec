@@ -1,8 +1,12 @@
 Pod::Spec.new do |s|
 
   s.name         = "ZKPulseView"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "Simple iOS UIView Category to create a Pulse (Breathing light) Effect on your needs"
+  
+  s.author       = { "Zack Chung" => "zackhsuan@gmail.com" }
+  
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
   s.description  = <<-DESC
                    Display a pulse within a UIView
@@ -15,8 +19,8 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/Oggerschummer/ZKPulseView"
   s.platform     = :ios
-  s.source       = { :git => "https://github.com/Oggerschummer/ZKPulseView.git", :tag => "0.0.3" }
-  s.source_files  = 'ZKPulseView/Class/*.{h,m}'
+  s.source       = { :git => "https://github.com/Oggerschummer/ZKPulseView.git", :tag => "0.0.4" }
+  s.source_files  = 'ZKPulseView/Class/**/*.{c,h,hh,m,mm}'
   s.frameworks  = "Foundation", "UIKit", "MessageUI"
   s.requires_arc = true
 
